@@ -1,83 +1,89 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 body{
-background-image: linear-gradient(to right, #c2c2c2cc, white)
-}
-
-header {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    background-image: url(./bwh-header-tecno.gif);
-    height: 100px;
-    top: -20px;
-}
-
-header h1 {
-    position: relative;
-    color: white;
-    top: 30px;
-    font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-div#eu img {
-    position:relative;
-    left: 500px;
-    padding: 20px 0 30px 0;
-    border-radius: 30%;
+    background-image: linear-gradient(to right, #c2c2c2cc, white)
+    }
     
-  
-}
-
-nav#links ul {
-    position: relative;
-    left: 570px;
-    top: -20px;
-}
+    header {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        background-image: url(./bwh-header-tecno.gif);
+        height: 100px;
+        top: -40px;
+    }
     
-nav#links li {
-    list-style: none;
-}
-
-nav#links li a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+    header h1 {
+        position: relative;
+        color: white;
+        top: 20px;
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+    }
     
-}
-
-nav#links li a:hover{
-    color: orange;
-    transition: 0.30s;
-
-}
-div#descricao {
-    text-align: justify;
-    text-indent: 50px;
-    position:absolute;
-    top: 200px;
-    left: 700px;
-    max-width: 30%;
-    padding-left: 30px;
-}
-
-section#atributos {
-    position: relative;
-    text-align: center;
-    padding: 50px 0 50px 0;
-    font-size: 35px;
-}
-
-section#atributos li a {
-    text-decoration: none;
-    color: black;
-}
-
-section#atributos li a:hover{
-    color: orange;
-    transition: 0.30s;
-}
+    div#eu img {
+        position:relative;
+        left: 500px;
+        padding: 20px 0 30px 0;
+        border-radius: 30%;
+    }
+    
+    nav#links ul li{
+        position: relative;
+        left: 530px;
+        top: -20px;
+        list-style: none;
+        max-width: 70%;
+        
+    }
+        
+    nav#links ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+    
+    nav#links li a:hover{
+        color: orange;
+        transition: 0.30s;
+    
+    }
+    div#descricao {
+        text-align: justify;
+        text-indent: 50px;
+        position:absolute;
+        top: 170px;
+        left: 710px;
+        max-width: 30%;
+        padding-left: 30px;
+        font-size: 18px;
+    }
+    
+    section#atributos {
+        position: relative;
+        text-align: center;
+        padding: 20px 0 40px 0;
+        font-size: 35px;
+        list-style: none;
+    }
+    
+    section#atributos li {
+        list-style: none;
+    }
+    
+    section#atributos li a {
+        text-decoration: none;
+        color: black;
+        
+    }
+    
+    section#atributos li a:hover{
+        color: orange;
+        transition: 0.30s;
+    }
+    
+    footer {
+        text-align: center;
+        position: relative;
+        max-height: 100%;
+        padding: 40px 0 10px 0;
+    }
+       
