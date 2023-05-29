@@ -1,89 +1,113 @@
-body{
-    background-image: linear-gradient(to right, #c2c2c2cc, white)
-    }
-    
-    header {
-        text-align: center;
-        position: relative;
-        width: 100%;
-        background-image: url(./bwh-header-tecno.gif);
-        height: 100px;
-        top: -40px;
-    }
-    
-    header h1 {
-        position: relative;
-        color: white;
-        top: 20px;
-        font-size: 50px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    
-    div#eu img {
-        position:relative;
-        left: 500px;
-        padding: 20px 0 30px 0;
-        border-radius: 30%;
-    }
-    
-    nav#links ul li{
-        position: relative;
-        left: 530px;
-        top: -20px;
-        list-style: none;
-        max-width: 60%;
-        
-    }
-        
-    nav#links ul li a{
-        text-decoration: none;
-        color: black;
-        font-size: 20px;
-    }
-    
-    nav#links li a:hover{
-        color: orange;
-        transition: 0.30s;
-    
-    }
-    div#descricao {
-        text-align: justify;
-        text-indent: 50px;
-        position:absolute;
-        top: 170px;
-        left: 710px;
-        max-width: 30%;
-        padding-left: 30px;
-        font-size: 18px;
-    }
-    
-    section#atributos {
-        position: relative;
-        text-align: center;
-        padding: 20px 0 40px 0;
-        font-size: 35px;
-        list-style: none;
-    }
-    
-    section#atributos li {
-        list-style: none;
-    }
-    
-    section#atributos li a {
-        text-decoration: none;
-        color: black;
-        
-    }
-    
-    section#atributos li a:hover{
-        color: orange;
-        transition: 0.30s;
-    }
-    
-    footer {
-        text-align: center;
-        position: relative;
-        max-height: 100%;
-        padding: 40px 0 10px 0;
-    }
-       
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:rgb(0, 0, 64);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  height: 60px;
+  background-color: rgba(118, 124, 130, 0.4);      
+  justify-content: center;
+}
+
+#title {
+  display: flex;
+  color: white;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+}
+
+.bi-linkedin {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.bi-github {
+  font-size: 20px;
+}
+
+.container {
+  max-width: 40%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 20px;
+}
+
+.main-container{
+    position: relative;
+    width: 500px;
+}
+/*creating line for timeline*/
+.main-container::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    background-color: rgb(17, 17, 170);
+    top:0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+/*Adjusting box of all content*/
+.text-wrapper{
+    padding: 10px 40px;
+    position: relative;
+    width:51%;
+    box-sizing: border-box;
+    margin: 50px 0;
+}
+.text-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    right: -10px;
+    background-color:white;
+    top:15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+/*for left events*/
+.left{
+    left: 0;
+}
+/*for right events*/
+.right{
+    left:50%;
+}
+.right::after{
+    left:-10px;
+}
+/*content box colour padding and radius for circular corner*/
+.content{
+    padding: 15px 15px 15px 17px;
+    background-color: rgb(101, 160, 237);
+    border-radius: 4px;
+}
+/*setting text property of event heading*/
+.content h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #212121;
+    letter-spacing:1px;
+}
+/*setting text property of event content*/
+.content p{
+    color: #616161;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 2px;
+}
